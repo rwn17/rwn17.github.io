@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Weining Ren</title>
+
+    <meta name="author" content="Jon Barron">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Weining Ren | 任伟宁
+                </p>
+                <p>
+                  <p>I am a PhD student at 
+                    <a href="https://visailab.github.io/people.html">Visual AI Lab </a> at HKU CDS, advised by 
+                    <a href="https://www.kaihan.org/">Dr.Kai Han</a>.
+                    My previous research primarily focuses on 3D Vision.
+                  </p>
+                  <p>I obtained my Master degree from ETH Zürich working with <a href="https://people.inf.ethz.ch/marc.pollefeys/">Prof. Marc Pollefeys</a> and <a href="https://pengsongyou.github.io/">Dr. Songyou Peng</a>.
+                    Prior to that, I obtained a bachelor degree from THU supervised by <a href="https://air.tsinghua.edu.cn/en/info/1044/1171.html">Prof. Diange Yang</a> and <a href="https://scholar.google.com/citations?user=lbtJvIMAAAAJ&hl=fr">Dr. Kun Jiang</a>. 
+                    I'm Lucky to have interned at <a href="https://www.huawei.com/ch-en/corporate-information/local-states">Huawei Zürich</a> with <a href="https://scholar.google.com/citations?user=a5GBXkEAAAAJ&hl=en">Dr. Stamatios Georgoulis</a> and 
+                    <a href="https://vis.baidu.com/">Baidu VIS</a> with <a href="https://tanxchong.github.io/">Dr. Xiao Tan</a>.
+
+                  </p>
+                  <p style="text-align:center">
+                    <a href="mailto:weining@connect.hku.hk">Email</a> &nbsp/&nbsp
+                    <a href="https://scholar.google.com/citations?user=AtIdZVoAAAAJ&hl=en">Google Scholar</a>
+                    &nbsp/&nbsp
+                    <a href="https://github.com/rwn17/">Github</a>
+                  </p>
+                </td>
+                <td style="padding:2.5%;width:40%;max-width:40%">
+                  <a href="images/weining.png"><img style="width:100%;max-width:100%" alt="profile photo"
+                      src="images/weining.png" class="hoverZoomLink"></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                
+                <p>
+                    My previous research primarily focuses on 3D vision, including SLAM, NeRF, depth estimation and optical flow. 
+                    Currently, I am working on feed-forward 3D reconstruction models, 
+                    and I have a growing interest in generative models and sparse attention.</p>
+                <p> </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- Research Papers List -->
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+
+              <!-- Paper 1: Fin3R -->
+              <tr onmouseout="handleMouseOut('fin3r_image')" onmouseover="handleMouseOver('fin3r_image')">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/fin3r_image.png' width=160>
+                  </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:top">
+                  <a href="https://visual-ai.github.io/fin3r/">
+                    <papertitle><img src="images/fin3r.png" width="50">: Fine-tuning Feed-forward 3D Reconstruction Models via Monocular Knowledge Distillation</papertitle>
+                  </a>
+                  <br>
+                  <strong>Weining Ren</strong>,
+                  <a href="https://whj363636.github.io/">Hongjun Wang</a>,
+                  <a href="https://tanxchong.github.io/">Xiao Tan</a>,
+                  <a href="https://www.kaihan.org/">Kai Han</a>
+                  <br>
+                  <em><strong>NeurIPS</strong></em>, 2025
+                  <br>
+                  <a href="https://arxiv.org/abs/2511.22429">Paper</a> | 
+                  <a href="https://visual-ai.github.io/fin3r/">project page</a> | 
+                  <a href="https://github.com/Visual-AI/Fin3R">code</a>
+                  <p></p>
+                  <p>
+                    Fin3R finetune feed-forward 3D reconstruction models via monocular knowledge distillation,
+                    which improves the fine structure and robustness while maintaining the multi-view performance.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- Paper 2: NeRF On-the-go -->
+              <tr onmouseout="otg_stop()" onmouseover="otg_start()" class="publication-item selected-publication">  
+                <td width="25%" style="padding:20px;vertical-align:middle">
+                  <div class="one">
+                    <!-- Added opacity:0 to hide video initially -->
+                    <div class="two" id='otg_shape' style="opacity: 0;">
+                      <video width="160" height="120" muted autoplay loop>
+                        <source src="images/teaser_otg_1.5x.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <img src='images/teaser_otg3.jpg' width="160" height="120">
+                  </div>
+                  <script type="text/javascript">
+                    function otg_start() {
+                      document.getElementById('otg_shape').style.opacity = "1";
+                    }
+                    function otg_stop() {
+                      document.getElementById('otg_shape').style.opacity = "0";
+                    }
+                    otg_stop()
+                  </script>
+                </td>
+                <td valign="top" width="75%" style="padding:20px;">
+                  <a href="https://rwn17.github.io/nerf-on-the-go/">
+                    <papertitle>
+                      <img src="images/logo_otg.png" width="20"> NeRF <em>On-the-go</em>: Exploiting Uncertainty for Distractor-free NeRFs in the Wild
+                    </papertitle>
+                  </a>
+                  <br>
+                  <strong>Weining Ren</strong>*,
+                  <a href="https://zzh2000.github.io">Zihan Zhu</a>*,
+                  <a href="https://inf.ethz.ch/people/people-atoz/person-detail.MjY0ODc2.TGlzdC8zMDQsLTIxNDE4MTU0NjA=.html">Boyang Sun</a>,
+                  <a href="https://inf.ethz.ch/people/people-atoz/person-detail.Mjc4NTY0.TGlzdC8zMDQsLTIxNDE4MTU0NjA=.html">Jiaqi Chen</a>,
+                  <a href="https://inf.ethz.ch/personal/marc.pollefeys/">Marc Pollefeys</a>,
+                  <a href="https://pengsongyou.github.io/">Dr. Songyou Peng</a>
+                  <br>
+                  <em><strong>CVPR</strong></em>, 2024
+                  <br>
+                  <a href="https://arxiv.org/abs/2405.18715">paper</a> |
+                  <a href="https://rwn17.github.io/nerf-on-the-go/">project page</a> |
+                  <a href="https://youtu.be/mUQ_LOyonB0">video</a> |
+                  <a href="https://github.com/cvg/nerf-on-the-go">code</a>
+                  <p></p>
+                  We enable robust novel view synthesis from casually captured in-the-wild images. <br>
+                  <p></p>
+                </td>
+              </tr>
+
+              <!-- Paper 3: Out of the Room (OOR) -->
+              <tr onmouseout="oor_stop()" onmouseover="oor_start()" class="publication-item selected-publication">  
+                <td width="25%" style="padding:20px;vertical-align:middle">
+                  <div class="one">
+                    <!-- Added opacity:0 to hide video initially -->
+                    <div class="two" id='oor_shape' style="opacity: 0;">
+                      <video width="160" height="90" muted autoplay loop>
+                        <source src="images/oor.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <img src='images/oor.png' width="160" height="90">
+                  </div>
+                  <script type="text/javascript">
+                    function oor_start() {
+                      document.getElementById('oor_shape').style.opacity = "1";
+                    }
+                    function oor_stop() {
+                      document.getElementById('oor_shape').style.opacity = "0";
+                    }
+                    oor_stop()
+                  </script>
+                </td>
+                <td valign="top" width="75%" style="padding:20px;">
+                  <a href="https://arxiv.org/abs/2403.04562">
+                    <papertitle>
+                      Out of the Room: Generalizing Event-Based Dynamic Motion Segmentation for Complex Scenes
+                    </papertitle>
+                  </a>
+                  <br>
+                  <a href="https://www.linkedin.com/in/stamatios-georgoulis-4a041636/">Stamatios Georgoulis</a>*,
+                  <strong>Weining Ren</strong>*,
+                  <a href="https://www.linkedin.com/in/alfredo-bochicchio/?originalSubdomain=it">Alfredo Bochicchio</a>,
+                  <a href="https://www.linkedin.com/in/eckertdan/?originalSubdomain=ch">Daniel Eckert</a>,
+                  <a href="https://www.linkedin.com/in/yuanyouli/?originalSubdomain=ch">Yuanyou Li</a>,
+                  <a href="https://scholar.google.com/citations?user=2Be2mRAAAAAJ&hl=de">Abel Gawel</a>
+                  <br>
+                  <em><strong>3DV</strong></em>, 2024(Spotlight)
+                  <br>
+                  <br>
+                  <a href="https://arxiv.org/abs/2403.04562">paper</a> |
+                  <a href="https://drive.google.com/file/d/1jS2P9FPOirZmx6sc0S_bWxnGreJjORky/view?usp=drive_link">video</a>
+                  <p></p>
+                  We segment moving objects with event camera. <br>
+                  <p></p>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody>
+              <tr>
+                <td>
+                  <h2>Honors</h2>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:0">
+                  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <ul>
+                          <p><strong>NeurIPS Top Reviewer</strong>, NeurIPS, 2025</p>
+                          <p><strong>HKPFS</strong>, The University of Hong Kong, 2024-2028</p>
+                          <p><strong>Degree with Distiction</strong>, ETH Zürich, 2024</p>
+                          <p><strong>National Scholarship</strong>, Tsinghua University, 2020</p>
+                          <p><strong>1st Prize in Physics Olympics</strong>, Heilongjiang Province, 2017</p>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody>
+                <tr>
+                <td style="padding:0px">
+                    <br>
+                    <p style="text-align:center;font-size:small;">
+                    Thanks <a href="http://jonbarron.info">Jon Barron</a> for the nice template.
+                    </p>
+                </td>
+                </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
